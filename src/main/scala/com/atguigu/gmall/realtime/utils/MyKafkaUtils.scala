@@ -38,10 +38,9 @@ object MyKafkaUtils {
    * 基于SparkStreaming获取到DStream对象
    * @return
    */
-  def getKafkaDstream(ssc: StreamingContext, topic: String, group: String): InputDStream[ConsumerRecord[String, String]] = {
+  def getKafkaDstream(ssc: StreamingContext, topic: String, group: String) = {
     //动态指定消费者组
     consumerParams.put(ConsumerConfig.GROUP_ID_CONFIG, group)
-
     val kafkaDstream: InputDStream[ConsumerRecord[String, String]] = KafkaUtils.createDirectStream(
       ssc,
       LocationStrategies.PreferConsistent,
@@ -54,9 +53,9 @@ object MyKafkaUtils {
    * 从Kafka中消费数据
    * 指定offset进行消费
    */
-  def getKafkaDStream(ssc : StreamingContext , topic : String  , group: String, offsets: Map[TopicPartition,Long ] ) = {
-
-  }
+//  def getKafkaDStream(ssc : StreamingContext , topic : String  , group: String, offsets: Map[TopicPartition,Long ] ) = {
+//
+//  }
 
   /**
    * 生产者对象
@@ -72,19 +71,10 @@ object MyKafkaUtils {
      */
     val producerParams: util.HashMap[String, AnyRef] = new util.HashMap[String, AnyRef]()
     //集群位置
-    producerParams.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, MyPropsUtils.apply(MyConfig.KAFKA_BOOTSTRAP_SERVER))
+    producerParams.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, MyPropsUtils(MyConfig.KAFKA_BOOTSTRAP_SERVER))
     //kv序列化器
-    producerParams.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer")
-    producerParams.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer")
-    //ack
-
-    //batch.size
-
-    //linger.ms
-
-    //retries
-
-    //分区分配策略
+    producerParams.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer")
+    producerParams.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer")
 
     val producer: KafkaProducer[String, String] = new KafkaProducer[String, String](producerParams)
     producer
@@ -93,8 +83,11 @@ object MyKafkaUtils {
   /**
    * 往kafka中生产数据
    */
-  def send(topic: String, msg: String): Future[RecordMetadata] = {
+  def send(topic: String, msg: String) = {
     kafkaProducer.send(new ProducerRecord[String, String](topic, msg))
+  }
+  def send(topic : String ,key: String ,  msg : String ) = {
+    kafkaProducer.send(new ProducerRecord[String,String ](topic,key ,msg))
   }
 
   /**
