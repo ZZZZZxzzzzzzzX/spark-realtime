@@ -9,5 +9,8 @@
         <module name="spark-realtime" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spark-realtime" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
