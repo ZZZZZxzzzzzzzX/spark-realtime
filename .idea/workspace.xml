@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60277d25-8f39-4e56-a5a0-7e19f02b3c49" name="变更" comment="spark实时项目">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/app/DwdOrderApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/utils/MyOffsetUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/utils/MyRedisUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/app/DwdOrderApp$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/app/DwdOrderApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyOffsetUtils$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyOffsetUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyRedisUtils$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyRedisUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/app/OdsBaseLogApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/app/OdsBaseLogApp.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/utils/MyKafkaUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/utils/MyKafkaUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/app/OdsBaseLogApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/app/OdsBaseLogApp$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyKafkaUtils$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyKafkaUtils$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyKafkaUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/gmall/realtime/utils/MyKafkaUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +189,9 @@
       <workItem from="1650468774248" duration="201000" />
       <workItem from="1650469007105" duration="266000" />
       <workItem from="1650469296028" duration="934000" />
-      <workItem from="1650542536648" duration="9868000" />
+      <workItem from="1650542536648" duration="9925000" />
+      <workItem from="1650588269103" duration="2253000" />
+      <workItem from="1650629093075" duration="9155000" />
     </task>
     <task id="LOCAL-00001" summary="spark实时项目">
       <created>1650438186857</created>
@@ -206,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650542556673</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spark实时项目">
+      <created>1650559817825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650559817825</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spark实时项目">
+      <created>1650639166187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650639166187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

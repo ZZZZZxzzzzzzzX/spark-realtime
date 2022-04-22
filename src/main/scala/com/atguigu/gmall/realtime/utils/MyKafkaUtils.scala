@@ -53,9 +53,15 @@ object MyKafkaUtils {
    * 从Kafka中消费数据
    * 指定offset进行消费
    */
-//  def getKafkaDStream(ssc : StreamingContext , topic : String  , group: String, offsets: Map[TopicPartition,Long ] ) = {
-//
-//  }
+  def getKafkaDStream(ssc : StreamingContext , topic : String  , group: String, offsets: Map[TopicPartition,Long ] ) = {
+    consumerParams.put(ConsumerConfig.GROUP_ID_CONFIG, group)
+    val kafkaDstream: InputDStream[ConsumerRecord[String, String]] = KafkaUtils.createDirectStream(
+      ssc,
+      LocationStrategies.PreferConsistent,
+      ConsumerStrategies.Subscribe[String, String](Array(topic), consumerParams, offsets)
+    )
+    kafkaDstream
+  }
 
   /**
    * 生产者对象
