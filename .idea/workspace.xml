@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60277d25-8f39-4e56-a5a0-7e19f02b3c49" name="变更" comment="日志数据采集和分流">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/gmall/realtime/app/OdsBaseDbApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="60277d25-8f39-4e56-a5a0-7e19f02b3c49" name="变更" comment="实时项目" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,6 +191,7 @@
       <workItem from="1650629093075" duration="9155000" />
       <workItem from="1650639394508" duration="2117000" />
       <workItem from="1650896813284" duration="2854000" />
+      <workItem from="1650963071998" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="spark实时项目">
       <created>1650438186857</created>
@@ -244,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650639461823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="实时项目">
+      <created>1650963137979</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650963137979</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +269,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spark实时项目" />
     <MESSAGE value="日志数据采集和分流" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志数据采集和分流" />
+    <MESSAGE value="实时项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="实时项目" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
